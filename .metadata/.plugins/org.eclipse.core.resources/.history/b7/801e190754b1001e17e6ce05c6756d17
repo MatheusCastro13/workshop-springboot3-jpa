@@ -1,0 +1,5 @@
+package com.MatheusResio.coursespring.resources;
+
+public class UserResource {
+
+}

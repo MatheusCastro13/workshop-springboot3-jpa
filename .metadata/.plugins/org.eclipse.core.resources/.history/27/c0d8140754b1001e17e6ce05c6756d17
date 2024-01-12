@@ -1,0 +1,5 @@
+package com.MatheusResio.coursespring.entities;
+
+public class User {
+
+}
