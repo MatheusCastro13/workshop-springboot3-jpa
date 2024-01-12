@@ -1,0 +1,5 @@
+package com.MatheusResio.coursespring.config;
+
+public class TestConfig {
+
+}
