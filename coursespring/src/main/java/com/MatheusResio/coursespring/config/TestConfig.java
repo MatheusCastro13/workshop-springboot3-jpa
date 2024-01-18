@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import com.MatheusResio.coursespring.entities.Category;
 import com.MatheusResio.coursespring.entities.Order;
 import com.MatheusResio.coursespring.entities.OrderItem;
+import com.MatheusResio.coursespring.entities.Payment;
 import com.MatheusResio.coursespring.entities.Product;
 import com.MatheusResio.coursespring.entities.User;
 import com.MatheusResio.coursespring.entities.enums.OrderStatus;
@@ -81,5 +82,9 @@ import com.MatheusResio.coursespring.repositories.UserRepository;
 
 		orderItemRepository.saveAll(Arrays.asList(oi1, oi2, oi3, oi4));
 		
+		Payment pay1 = new Payment(null, Instant.parse("2019-06-20T21:53:07Z"), o1);
+		o1.setPayment(pay1);
+
+		orderRepository.save(o1);
 	}
 }
