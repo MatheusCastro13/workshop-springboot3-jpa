@@ -1,0 +1,5 @@
+package com.MatheusResio.coursespring.resources.exceptions;
+
+public class StandardError {
+
+}
